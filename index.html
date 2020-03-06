@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Store filter project</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		
+		<!-- Google fonts Kaushan script -->
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+		
+		<!-- Font awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+		
+	</head>
+	
+	<body>
+		<!-- Navigation -->
+		<nav class="nav container" id="nav">
+			<div class="nav__logo__list">
+				<img class="nav__logo" src="img/logo.svg">
+				<ul id="navList" class="navigation__list">
+					<li class="navigation__item" id="home-btn"><a href="#">Home</a></li>
+					<li class="navigation__item" id="about-btn"><a href="#about">About</a></li>
+					<li class="navigation__item" id="store-btn"><a href="#store">Store</a></li>
+				</ul>
+			</div>
+			
+			<div class="navigation__phone">
+				<p><i class="fas fa-phone"></i> +123 456 789</p>
+			</div>
+			<div class="navigation__cart">
+				<p><i class="fas fa-shopping-cart"></i> 2 items - $10,49</p>
+			</div>
+			<div class="navigation__button">
+				<a class="btn-nav" id="nav-open"><i class="fas fa-bars"></i></a>
+				<a class="btn-nav" id="nav-close"><i class="fas fa-times"></i></a>
+			</div>
+		</nav>
+
+		<!-- Welcome --> 
+		<div class="welcome container">
+			<h2 class="welcome__title">Welcome To <span class="title--accent">Grandma's</span></h2>
+			<a class="btn btn-welcome">Explore</a>
+		</div>
+			
+		<!-- About us -->
+		<div class="about container" id="about">
+			<div class="about__column">
+				<div class="about__column--text"> 
+					<h2 class="about__title">About <span class="title--accent">Us</span></h2>
+					<p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis porro at dolorum! Ad!</p>
+					<a class="btn">Explore</a>
+				</div>
+				<div class="img-container">
+					<img class="about__img" src="img/sweets-1.jpeg" alt="colored macrons">
+				</div>
+			</div> <!-- /about__column -->
+		</div> <!-- /about container -->
+		
+		<!-- Store -->
+		<div class="store container" id="store">
+			<h2 class="store__title">Our <span class="title--accent">Store</span></h2>
+			<div class="store__buttons">
+				<a href="#store" class="btn store__btn" id="all" data-filter="all">All</a>
+				<a href="#store" class="btn store__btn" id="cakes" data-filter="cakes">Cakes</a>
+				<a href="#store" class="btn store__btn" id="cupcakes" data-filter="cupcakes">Cupcakes</a>
+				<a href="#store" class="btn store__btn" id="sweets" data-filter="sweets">Sweets</a>
+				<a href="#store" class="btn store__btn" id="doughnuts" data-filter="doughnuts">Doughnuts</a>
+			</div>
+			<div class="store__search">
+				<span class="store__search--icon"><i class="fas fa-search"></i></span>
+				<input id="searchbar" class="store__searchbar" type="text" placeholder="item..."> 
+			</div>
+			
+			<div class="store__items">
+				
+				<!-- Item 1 -->
+				<div class="item sweets" data-item="sweets">
+					<div class="store__item--img--container">
+						<img class="store__item--img" src="img/sweets-1.jpeg"alt="">
+					</div>
+								
+					<div class="store__item--description">
+						<p>Sweet item</p>
+						<p>$5</p>
+					</div>
+					
+				</div>
+				
+				<!-- Item 2 -->
+				<div class="item cupcakes" data-item="cupcake">
+					<div class="store__item--img--container">
+						<img class="store__item--img" src="img/cupcake-1.jpeg" alt="">
+					</div>
+					<div class="store__item--description">
+						<p>Cupcake item</p>
+						<p>$5</p>
+					</div>
+				</div>
+				
+				<!-- Item 3 -->
+				<div class="item cakes" data-item="cake">
+					<div class="store__item--img--container">
+						<img class="store__item--img" src="img/cake-1.jpeg" alt="">
+					</div>
+					<div class="store__item--description">
+						<p>Cake item</p>
+						<p>$5</p>
+					</div>
+				</div>
+				
+				<!-- Item 4 -->
+				<div class="item doughnuts" data-item="doughnut">
+					<div class="store__item--img--container">
+						<img class="store__item--img" src="img/doughnut-1.jpeg" alt="">
+					</div>
+					<div class="store__item--description">
+						<p>Doughnut item</p>
+						<p>$5</p>
+					</div>
+				</div>
+				
+				<!-- Item 5 -->
+				<div class="item sweets" data-item="sweet">
+					<div class="store__item--img--container">
+						<img class="store__item--img" src="img/sweets-2.jpeg" alt="">
+					</div>
+					<div class="store__item--description">
+						<p>Sweet item</p>
+						<p>$5</p>
+					</div>
+				</div>
+				
+				<!-- Item 6 -->
+				<div class="item cupcakes" data-item="cupcake">
+					<div class="store__item--img--container">
+						<img class="store__item--img" src="img/cupcake-2.jpeg" alt="">
+					</div>
+					<div class="store__item--description">
+						<p>Cupcake item</p>
+						<p>$5</p>
+					</div>
+				</div>
+				
+				<!-- Item 7 -->
+				<div class="item cakes" data-item="cake">
+					<div class="store__item--img--container">
+						<img class="store__item--img" src="img/cake-2.jpeg" alt="">
+					</div>
+					<div class="store__item--description">
+						<p>Cake item</p>
+						<p>$5</p>
+					</div>
+				</div>
+				
+				<!-- Item 8 -->
+				<div class="item doughnuts" data-item="doughnut">
+					<div class="store__item--img--container">
+						<img class="store__item--img" src="img/doughnut-2.jpeg" alt="">
+					</div>
+					<div class="store__item--description">
+						<p>Doughnut item</p>
+						<p>$5</p>
+					</div>
+				</div>
+				
+				<!-- Item 9 -->
+				<div class="item sweets" data-item="sweet">
+					<div class="store__item--img--container">
+						<img class="store__item--img" src="img/sweets-3.jpeg" alt="">
+					</div>
+					<div class="store__item--description">
+						<p>Sweet item</p>
+						<p>$5</p>
+					</div>
+				</div>
+				
+				<!-- Item 10 -->
+				<div class="item cupcakes" data-item="cupcake">
+					<div class="store__item--img--container">
+						<img class="store__item--img" src="img/cupcake-3.jpeg" alt="">
+					</div>
+					<div class="store__item--description">
+						<p>Cupcake item</p>
+						<p>$5</p>
+					</div>
+				</div>
+				
+				<!-- Item 11 -->
+				<div class="item cakes" data-item="cake">
+					<div class="store__item--img--container">
+						<img class="store__item--img" src="img/cake-3.jpeg" alt="">
+					</div>
+					<div class="store__item--description">
+						<p>Cake item</p>
+						<p>$5</p>
+					</div>
+				</div>
+				
+				<!-- Item 12 -->
+				<div class="item doughnuts" data-item="doughnut">
+					<div class="store__item--img--container">
+						<img class="store__item--img" src="img/doughnut-3.jpeg"alt="">
+					</div>
+					<div class="store__item--description">
+						<p>Doughnut item</p>
+						<p>$5</p>
+					</div>
+				</div>
+				
+			</div> <!-- /store__items -->
+			
+		</div> <!--/store container-->
+		
+		<script src="script/script.js" type="text/javascript"></script>
+	</body>
+</html>
